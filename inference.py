@@ -4,9 +4,9 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
 
-tokenizer = AutoTokenizer.from_pretrained("itsrocchi/SeewebLLM-it-ver2")
+tokenizer = AutoTokenizer.from_pretrained("seeweb/SeewebLLM-it-ver2")
 model = AutoModelForCausalLM.from_pretrained(
-    "itsrocchi/SeewebLLM-it-ver2",
+    "seeweb/SeewebLLM-it-ver2",
     device_map="auto",
     torch_dtype=torch.float16,
     load_in_8bit=True,

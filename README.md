@@ -5,18 +5,20 @@ Questo progetto riguarda l'addestramento di un modello linguistico HuggingFace u
 
 ## Tabella dei Contenuti
 
-- [Introduzione](#introduzione)
-- [Primi Passi](#primi-passi)
-  - [Prerequisiti](#prerequisiti)
-  - [Installazione](#installazione)
-- [Utilizzo](#utilizzo)
-  - [Prima di iniziare](#prima-di-iniziare)
-  - [Argomenti da Riga di Comando](#argomenti-da-riga-di-comando)
-  - [Esempio di utilizzo](#esempio-di-utilizzo)
-  - [Esecuzione](#esecuzione)
-- [Inferenza](#inferenza)
-- [Contributori](#contributori)
-- [Licenza](#licenza)
+- [Finetuning LLama 2](#finetuning-llama-2)
+  - [Tabella dei Contenuti](#tabella-dei-contenuti)
+  - [Introduzione](#introduzione)
+  - [Primi Passi](#primi-passi)
+    - [Prerequisiti](#prerequisiti)
+    - [Installazione](#installazione)
+  - [Utilizzo](#utilizzo)
+    - [Prima di iniziare](#prima-di-iniziare)
+    - [Argomenti da Riga di Comando](#argomenti-da-riga-di-comando)
+    - [Esempio di utilizzo](#esempio-di-utilizzo)
+    - [Esecuzione](#esecuzione)
+  - [Inferenza](#inferenza)
+  - [Contributori](#contributori)
+  - [Licenza](#licenza)
 
 ## Introduzione
 
@@ -60,7 +62,7 @@ Prima di lanciare lo script è necessario modificarlo aggiungendo parametri pers
 Lo script principale supporta diversi argomenti da riga di comando per personalizzare il processo di addestramento. Gli argomenti seguenti sono disponibili:
 
 - `model_name`: Nome del modello pre-addestrato (default: "meta-llama/Llama-2-7b-chat-hf").
-- `dataset_name`: Nome del dataset personalizzato (default: "itsrocchi/seeweb-it-292-forLLM").
+- `dataset_name`: Nome del dataset personalizzato (default: "seeweb/Seeweb-it-292-forLLM").
 - `dataset_text_field`: Nome del campo di testo nel dataset (default: "text").
 - `log_with`: Specifica come registrare i dati di addestramento ("wandb" per utilizzare Weights & Biases, altrimenti niente registrazione).
 - `learning_rate`: Tasso di apprendimento (default: 1.41e-5).
@@ -86,7 +88,7 @@ Ricorda che puoi utilizzare questi argomenti da riga di comando per personalizza
 ```shell
 python finetuner.py \
 --model_name meta-llama/Llama-2-7b-chat-hf \
---dataset_name itsrocchi/seeweb-it-292-forLLM \
+--dataset_name seeweb/Seeweb-it-292-forLLM \
 --load_in_4bit \
 --use_peft \
 --batch_size 4 \
