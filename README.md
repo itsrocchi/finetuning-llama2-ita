@@ -109,4 +109,4 @@ Nella repository è presente uno script per eseguire la generazione di testo uti
 
 ## Licenza
 
-Questo progetto è concesso in licenza secondo l'Apache License, Versione 2.0. Consulta [LICENSE](https://github.com/itsrocchi/finetuning-llama2-ita/blob/03359c5e96673611a9632d3ae5d42598151a25f9/LICENSE) per ulteriori informazioni.
+This project is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/itsrocchi/finetuning-llama2-ita/blob/03359c5e96673611a9632d3ae5d42598151a25f9/LICENSE) for more details.
