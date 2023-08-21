@@ -1,0 +1,9 @@
+trl
+typing
+torch
+datasets
+peft
+tqdm
+transformers
+huggingface_hub
+bitsandbytes
